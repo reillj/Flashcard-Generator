@@ -1,23 +1,6 @@
-// Requires ClozeCard constructor exported from ClozeCard.js.
+
 var ClozeCard = require("./ClozeCard.js");
 
-// Requires firebase module, so we can text storage in node.
-var firebase = require("firebase");
-
-// Initialize Firebase. Firebase would not open the add to web app option
-var config = {
-  apiKey: 
-  authDomain: 
-  databaseURL: 
-  projectId: 
-  storageBucket: 
-};
-firebase.initializeApp(config);
-
-// Creates variable to reference the database.
-var database = firebase.database();
-
-// For now, until there's a front end, uses inquirer to add new cards from command.
 var inquirer = require('inquirer');
 
 // Captures full text and cloze for cards.
@@ -46,8 +29,6 @@ var questions = [
     }
 ];
 
-// Uses recurssion to keep asking questions.
-// Stores new Cloze Card in firebase.
 function ask() {
     inquirer.prompt(questions).then(function (answers) {
         var newCloze = new ClozeCard(answers.text, answers.cloze);
