@@ -1,0 +1,35 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'init' ]
+2 info using npm@3.10.10
+3 info using node@v6.11.2
+4 silly package data { name: 'flashcard-genertor',
+4 silly package data   version: '1.0.0',
+4 silly package data   description: '',
+4 silly package data   main: 'main.js',
+4 silly package data   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+4 silly package data   repository:
+4 silly package data    { type: 'git',
+4 silly package data      url: 'git+https://github.com/reillj/Flashcard-Generator.git' },
+4 silly package data   author: 'Jennifer Reilly',
+4 silly package data   license: 'ISC',
+4 silly package data   bugs: { url: 'https://github.com/reillj/Flashcard-Generator/issues' },
+4 silly package data   homepage: 'https://github.com/reillj/Flashcard-Generator#readme' }
+5 info init written successfully
+6 verbose stack Error: EISDIR: illegal operation on a directory, open 'C:\Users\jenni\Flashcard-Generator\package.json'
+6 verbose stack     at Error (native)
+7 verbose cwd C:\Users\jenni\Flashcard-Generator
+8 error Windows_NT 10.0.15063
+9 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "init"
+10 error node v6.11.2
+11 error npm  v3.10.10
+12 error path C:\Users\jenni\Flashcard-Generator\package.json
+13 error code EISDIR
+14 error errno -4068
+15 error syscall open
+16 error eisdir EISDIR: illegal operation on a directory, open 'C:\Users\jenni\Flashcard-Generator\package.json'
+17 error eisdir This is most likely not a problem with npm itself
+17 error eisdir and is related to npm not being able to find a package.json in
+17 error eisdir a package you are trying to install.
+18 verbose exit [ -4068, true ]
