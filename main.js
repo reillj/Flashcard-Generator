@@ -4,13 +4,13 @@ var ClozeCard = require("./ClozeCard.js");
 // Requires firebase module, so we can text storage in node.
 var firebase = require("firebase");
 
-// Initialize Firebase.
+// Initialize Firebase. Firebase would not open the add to web app option
 var config = {
-  apiKey: "AIzaSyCrpShruKHPvkRUqHhUbfNhsSWPCzqERKg",
-  authDomain: "flashcard-generator-29f22.firebaseapp.com",
-  databaseURL: "https://flashcard-generator-29f22.firebaseio.com",
-  projectId: "flashcard-generator-29f22",
-  storageBucket: "flashcard-generator-29f22.appspot.com",
+  apiKey: 
+  authDomain: 
+  databaseURL: 
+  projectId: 
+  storageBucket: 
 };
 firebase.initializeApp(config);
 

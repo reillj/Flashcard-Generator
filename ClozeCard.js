@@ -38,13 +38,13 @@ console.log(firstPresidentCloze.cloze);
 console.log(firstPresidentCloze.partial());
 
 // Test ClozeCard constructor when text doesn't contain cloze.
-var typoPresidentCloze = new ClozeCard("Donald Trump is the current president of the US.", "Donald Frump");
+var typoPresidentCloze = new ClozeCard("Donald Trump is the current president of the US.", "Donald Trump");
 console.log(typoPresidentCloze.fullText);
 console.log(typoPresidentCloze.cloze);
 console.log(typoPresidentCloze.partial());
 
 // Test constructor is scope-safe.
-var missingNewCloze = ClozeCard("James Joyce wrote Ulysses", "James Joyce");
+var missingNewCloze = ClozeCard("Roald Dahl wrote The Witches", "Roald Dahl");
 console.log(missingNewCloze.fullText);
 console.log(missingNewCloze.cloze);
 console.log(missingNewCloze.partial());
